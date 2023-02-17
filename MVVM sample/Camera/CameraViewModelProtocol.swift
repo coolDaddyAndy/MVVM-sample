@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 protocol CameraViewModelProtocol {
     var isFlashEnabled:        Bool { get set }
     var isLivePhotoEnabled:    Bool { get set }

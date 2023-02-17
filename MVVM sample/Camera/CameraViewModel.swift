@@ -8,7 +8,6 @@
 import AVFoundation
 import UIKit
 
-
 class CameraViewModel {
     let userDefaults = UserDefaults.standard
     let dataBaseService = DataBaseMockService()
