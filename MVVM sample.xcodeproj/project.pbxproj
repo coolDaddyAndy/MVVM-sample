@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FD1D096B299FC3EE005C09B3 /* CameraViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D096A299FC3EE005C09B3 /* CameraViewModelProtocol.swift */; };
 		FD1D096F299FC616005C09B3 /* CameraMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D096E299FC616005C09B3 /* CameraMode.swift */; };
+		FD1D0971299FC7C8005C09B3 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D0970299FC7C8005C09B3 /* CameraViewModel.swift */; };
+		FD1D0974299FC8F4005C09B3 /* DataBaseMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D0973299FC8F4005C09B3 /* DataBaseMockService.swift */; };
 		FD473B2A299FC0A3000809A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD473B29299FC0A3000809A5 /* AppDelegate.swift */; };
 		FD473B2C299FC0A3000809A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD473B2B299FC0A3000809A5 /* SceneDelegate.swift */; };
 		FD473B2E299FC0A3000809A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD473B2D299FC0A3000809A5 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		FD1D096A299FC3EE005C09B3 /* CameraViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModelProtocol.swift; sourceTree = "<group>"; };
 		FD1D096E299FC616005C09B3 /* CameraMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMode.swift; sourceTree = "<group>"; };
+		FD1D0970299FC7C8005C09B3 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		FD1D0973299FC8F4005C09B3 /* DataBaseMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseMockService.swift; sourceTree = "<group>"; };
 		FD473B26299FC0A3000809A5 /* MVVM sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD473B29299FC0A3000809A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD473B2B299FC0A3000809A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				FD1D096A299FC3EE005C09B3 /* CameraViewModelProtocol.swift */,
+				FD1D0970299FC7C8005C09B3 /* CameraViewModel.swift */,
 				FD473B2D299FC0A3000809A5 /* ViewController.swift */,
 				FD473B2F299FC0A3000809A5 /* Main.storyboard */,
 			);
@@ -76,6 +81,14 @@
 				FD1D096E299FC616005C09B3 /* CameraMode.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FD1D0972299FC8BE005C09B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FD1D0973299FC8F4005C09B3 /* DataBaseMockService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		FD473B1D299FC0A3000809A5 = {
@@ -97,6 +110,7 @@
 		FD473B28299FC0A3000809A5 /* MVVM sample */ = {
 			isa = PBXGroup;
 			children = (
+				FD1D0972299FC8BE005C09B3 /* Services */,
 				FD1D096C299FC5D1005C09B3 /* Models */,
 				FD1D0969299FC3A3005C09B3 /* Camera */,
 				FD1D0966299FC2A1005C09B3 /* Application */,
@@ -180,7 +194,9 @@
 				FD473B2E299FC0A3000809A5 /* ViewController.swift in Sources */,
 				FD473B2A299FC0A3000809A5 /* AppDelegate.swift in Sources */,
 				FD473B2C299FC0A3000809A5 /* SceneDelegate.swift in Sources */,
+				FD1D0974299FC8F4005C09B3 /* DataBaseMockService.swift in Sources */,
 				FD1D096B299FC3EE005C09B3 /* CameraViewModelProtocol.swift in Sources */,
+				FD1D0971299FC7C8005C09B3 /* CameraViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
