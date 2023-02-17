@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD1D096B299FC3EE005C09B3 /* CameraViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D096A299FC3EE005C09B3 /* CameraViewModelProtocol.swift */; };
+		FD1D096F299FC616005C09B3 /* CameraMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D096E299FC616005C09B3 /* CameraMode.swift */; };
 		FD473B2A299FC0A3000809A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD473B29299FC0A3000809A5 /* AppDelegate.swift */; };
 		FD473B2C299FC0A3000809A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD473B2B299FC0A3000809A5 /* SceneDelegate.swift */; };
 		FD473B2E299FC0A3000809A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD473B2D299FC0A3000809A5 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD1D096A299FC3EE005C09B3 /* CameraViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModelProtocol.swift; sourceTree = "<group>"; };
+		FD1D096E299FC616005C09B3 /* CameraMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMode.swift; sourceTree = "<group>"; };
 		FD473B26299FC0A3000809A5 /* MVVM sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD473B29299FC0A3000809A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD473B2B299FC0A3000809A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1D0966299FC2A1005C09B3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FD473B29299FC0A3000809A5 /* AppDelegate.swift */,
+				FD473B2B299FC0A3000809A5 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FD1D0968299FC2F8005C09B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD473B32299FC0A5000809A5 /* Assets.xcassets */,
+				FD473B34299FC0A5000809A5 /* LaunchScreen.storyboard */,
+				FD473B37299FC0A5000809A5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD1D0969299FC3A3005C09B3 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				FD1D096A299FC3EE005C09B3 /* CameraViewModelProtocol.swift */,
+				FD473B2D299FC0A3000809A5 /* ViewController.swift */,
+				FD473B2F299FC0A3000809A5 /* Main.storyboard */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		FD1D096C299FC5D1005C09B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD1D096E299FC616005C09B3 /* CameraMode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FD473B1D299FC0A3000809A5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +97,10 @@
 		FD473B28299FC0A3000809A5 /* MVVM sample */ = {
 			isa = PBXGroup;
 			children = (
-				FD473B29299FC0A3000809A5 /* AppDelegate.swift */,
-				FD473B2B299FC0A3000809A5 /* SceneDelegate.swift */,
-				FD473B2D299FC0A3000809A5 /* ViewController.swift */,
-				FD473B2F299FC0A3000809A5 /* Main.storyboard */,
-				FD473B32299FC0A5000809A5 /* Assets.xcassets */,
-				FD473B34299FC0A5000809A5 /* LaunchScreen.storyboard */,
-				FD473B37299FC0A5000809A5 /* Info.plist */,
+				FD1D096C299FC5D1005C09B3 /* Models */,
+				FD1D0969299FC3A3005C09B3 /* Camera */,
+				FD1D0966299FC2A1005C09B3 /* Application */,
+				FD1D0968299FC2F8005C09B3 /* Resources */,
 			);
 			path = "MVVM sample";
 			sourceTree = "<group>";
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1D096F299FC616005C09B3 /* CameraMode.swift in Sources */,
 				FD473B2E299FC0A3000809A5 /* ViewController.swift in Sources */,
 				FD473B2A299FC0A3000809A5 /* AppDelegate.swift in Sources */,
 				FD473B2C299FC0A3000809A5 /* SceneDelegate.swift in Sources */,
+				FD1D096B299FC3EE005C09B3 /* CameraViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4765WXVJQU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM sample/Info.plist";
+				INFOPLIST_FILE = "MVVM sample/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4765WXVJQU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM sample/Info.plist";
+				INFOPLIST_FILE = "MVVM sample/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
